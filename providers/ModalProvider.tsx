@@ -1,6 +1,7 @@
 "use client";
 
-import Modal from "@/components/Modal";
+import AuthModal from "@/components/AuthModal";
+
 //A modal is a box that will disrupt a page by overlaying on top of it
 
 import { useEffect, useState } from "react";
@@ -23,15 +24,7 @@ const ModalProvider = () => {
 
   return (
     <>
-      <Modal
-        title="Test Modal"
-        description="Test Description"
-        isOpen
-        onChange={() => {}}
-      >
-        {" "}
-        Test Children
-      </Modal>
+      <AuthModal></AuthModal>
     </>
   );
 };
